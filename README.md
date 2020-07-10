@@ -1,16 +1,12 @@
 # `activeadmin-wysihtml5`
 
-### :warning: Unmaintained :warning:
-
-Sorry, but I no longer work on ActiveAdmin often enough to justify mantaining this gem. Take it as it is. If you are interested to update and maintain the gem, please let me know! :heart:
-
 ## Screenshots
 
-![activeadmin-wysihtml5 screenshot](https://raw.github.com/stefanoverna/activeadmin-wysihtml5/master/screenshot.png)
+![activeadmin-wysihtml5 screenshot](docs/screenshot.png)
 
-![activeadmin-wysihtml5 screenshot](https://raw.github.com/stefanoverna/activeadmin-wysihtml5/master/link_screenshot.png)
+![activeadmin-wysihtml5 screenshot](docs/link_screenshot.png)
 
-![activeadmin-wysihtml5 screenshot](https://raw.github.com/stefanoverna/activeadmin-wysihtml5/master/image_screenshot.png)
+![activeadmin-wysihtml5 screenshot](docs/image_screenshot.png)
 
 This is a wysiyg html editor for the [Active Admin](http://activeadmin.info/)
 interface using [wysihtml5](https://github.com/xing/wysihtml5).
@@ -20,16 +16,9 @@ interface using [wysihtml5](https://github.com/xing/wysihtml5).
 ```ruby
 # Gemfile
 
-gem 'activeadmin-dragonfly', github: 'stefanoverna/activeadmin-dragonfly'
-gem 'activeadmin-wysihtml5', github: 'stefanoverna/activeadmin-wysihtml5'
+gem 'activeadmin-wysihtml5', github: 'lluchez/activeadmin-wysihtml5'
 ```
 
-Now install the migrations:
-
-```bash
-$ rake activeadmin_wysihtml5:install:migrations
-$ rake db:migrate
-```
 
 ## Usage
 This gem provides you with a custom formtastic input called `:wysihtml5` to build out an html editor.
@@ -75,3 +64,6 @@ end
 * `:huge`: 450px;
 * an integer representing the height of the editor;
 
+## Note
+
+The ability to upload images, documents or videos has been removed.
